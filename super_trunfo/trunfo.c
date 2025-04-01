@@ -113,7 +113,7 @@ int main() {
     int comparacao_area = area_carta_1 > area_carta_2;
     int comparacao_pib = pib_carta_1 > pib_carta_2;
     int comparacao_pontos_turisticos = pontos_turisticos_carta_1 > pontos_turisticos_carta_2;
-    int comparacao_densidade_populacional = densidade_populacional_1 > densidade_populacional_2;
+    int comparacao_densidade_populacional = densidade_populacional_1 < densidade_populacional_2;
     int comparacao_pib_per_capita = pib_per_capita_1 > pib_per_capita_2;
     int comparacao_super_poder = super_poder_carta_1 > super_poder_carta_2;
     
