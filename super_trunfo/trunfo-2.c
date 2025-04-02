@@ -58,15 +58,6 @@ int main() {
     printf("%s", menu);
     scanf("%d", &opcao_1);
 
-    printf("\n----- Escolha o atributo 2 no qual deseja comparar as cartas: -----\n\n");
-    printf("%s", menu);
-    scanf("%d", &opcao_2);
-
-    if(opcao_2 == opcao_1) {
-        printf("\n\nOs atributos escolhidos foram os mesmos, tente novamente.\n");
-        return 0;
-    }
-
     //SWITCH COM AS OPÇÕES BASEADA NA ESCOLHA DO USUÁRIO
     switch (opcao_1)
     {
@@ -108,8 +99,18 @@ int main() {
     case 6:
         printf("Saindo do programa...\n");
         exit(0);
+        break;
     default:
         printf("Opção inválida. Tente novamente.\n");
+    }
+
+    printf("\n\n----- Escolha o atributo 2 no qual deseja comparar as cartas: -----\n\n");
+    printf("%s", menu);
+    scanf("%d", &opcao_2);
+
+    if(opcao_2 == opcao_1) {
+        printf("\n\nOs atributos escolhidos foram os mesmos, tente novamente.\n");
+        return 0;
     }
 
     //SWITCH COM AS OPÇÕES BASEADA NA ESCOLHA DO USUÁRIO
@@ -153,6 +154,7 @@ int main() {
     case 6:
         printf("Saindo do programa...\n");
         exit(0);
+        break;
     default:
         printf("Opção inválida. Tente novamente.\n");
     }
